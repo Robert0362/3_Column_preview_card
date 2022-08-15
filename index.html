@@ -13,6 +13,12 @@
 
 
   <style>
+    .box
+    {
+      padding-top: 10%;
+      padding-left:5%;
+      padding-bottom: 5%;
+    }
     h3
     {
       font-family: 'Big Shoulders Display';
@@ -20,6 +26,19 @@
     p
     {
       font-family: 'Lexend Deca';
+    }
+    .sedan
+    {
+      background-color:hsl(31, 77%, 52%) ;
+    }
+    .suv
+    {
+      background-color: hsl(184, 100%, 22%);
+    }
+    .luxury
+    {
+      background-color:hsl(179,100%,13%) ;
+    
     }
     .myButton
     {
@@ -30,11 +49,12 @@
   </style>
 </head>
 <body>
-  <div class="container mt-3">
-    <div class="card">
+  <div class="container mt-3 mx-auto box">
+    <div class="card w-75 mx-auto">
       <div class="row">
-        <div class="col col-12 bg-warning p-5 text-light">
-          <img src="images/icon-sedans.svg" alt="" class="sedan">
+        <div class="col col-12 col-md-4 p-5 text-light sedan">
+          <div class="logo pb-5">
+            <img src="images/icon-sedans.svg" alt="" class="sedan"></div>
           <h3>
             SEDANS
           </h3>
@@ -44,8 +64,10 @@
           </p>
           <button class="btn btn-light text-warning myButton">Learn More</button>
         </div>
-        <div class="col col-12 bg-info p-5 text-light">
-          <img src="images/icon-suvs.svg" alt="" class="suv">
+        <div class="col col-12 col-md-4 p-5 text-light suv">
+          <div class="logo pb-5">
+            <img src="images/icon-suvs.svg" alt="" class="suv">
+          </div>
           <h3>
             SUVs
           </h3>
@@ -55,8 +77,10 @@
           </p>
           <button class="btn btn-light text-info myButton">Learn More</button>
         </div>
-        <div class="col col-12 bg-success p-5 text-light">
-          <img src="images/icon-luxury.svg" alt="" class="luxury">
+        <div class="col col-12 col-md-4 p-5 text-light luxury">
+          <div class="logo pb-5">
+            <img src="images/icon-luxury.svg" alt="" class="luxury">
+          </div>
           <h3>
             LUXURY
           </h3>
@@ -68,10 +92,6 @@
         </div>
       </div> 
     </div>  
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
